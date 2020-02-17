@@ -1,5 +1,5 @@
 # CentOS 8 Ansible Test Image #
-[![Docker Repository on Quay](https://quay.io/repository/samdoran/centos8-ansible/status "Docker Repository on Quay")](https://quay.io/repository/samdoran/centos8-ansible)
+[![Container Repository on Quay](https://quay.io/repository/samdoran/centos8-ansible/status "Container Repository on Quay")](https://quay.io/repository/samdoran/centos8-ansible)
 
 This is a container for testing Ansible roles with [Molecule](https://molecule.readthedocs.io/en/stable/). It includes the latest version of Ansible available on this platform and is rebuilt regularly. It can also be used if you need to run Ansible on a specific operating system.
 
@@ -9,7 +9,7 @@ Note that Molecule does not use the Ansible version installed in the container w
 
 To build your own version of this container, run:
 
-    docker build -t centos8-ansible .
+    podman build -t centos8-ansible .
 
 ## Testing a role using Molecule ##
 
