@@ -18,15 +18,15 @@ RUN dnf makecache \
     drpm \
     e2fsprogs \
     initscripts \
-    python3 \
-    python3-pip \
+    python38 \
+    python38-pip \
     sudo \
     unzip \
     which \
     && dnf -y update \
     && rm -rf /var/cache/dnf
 
-RUN pip3 -q install ansible q
+RUN pip3 -q install ansible-core q
 
 RUN sed -i 's/Defaults    requiretty/Defaults    !requiretty/g' /etc/sudoers
 
